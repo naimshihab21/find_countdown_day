@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: hsla(219, 48%, 8%);
+  --body-color-alt: hsla(219, 32%, 12%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-color);
+}
+
+.container {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 0 1rem 1rem;
+  background-color: var(--body-color-alt);
+}
+
+.main__boxInput {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.main__titleInput {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.main__input {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 120px);
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.input__date,
+.input__month,
+.input__year {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__user {
+  padding: 3px 10px;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+
+/* ===== BUTTON ===== */
+.box__button {
+  display: grid;
+  justify-content: center;
+}
+
+button {
+  width: 6rem;
+  padding: 3px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 1rem;
+  border-top: 3px solid hsla(299, 100%, 62%, 1);
+}
+
+label {
+  font-size: .895rem;
+  text-align: center;
+  margin-top: .25rem;
+  font-weight: 600;
+}
+
+label::after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid yellow;
+  margin: 0 2.4rem;
+}
+
+/* ===== CSS Preview ===== */
+.count__preview {
+  background-color: hsl(219, 32%, 18%);
+  padding: 1rem;
+  color: white;
+}
+
+.count__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.count__timer {
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 80px);
+  gap: 10px;
+}
+
+span {
+  font-size: .895rem;
+}
+
+.count__days-h2,
+.count__hours-h2,
+.count__minutes-h2,
+.count__seconds-h2 {
+  font-size: 2rem;
+}
+
+.box__notification {
+  padding: 1rem;
+}
+
+p {
+  color: white;
+  font-size: .75rem;
+}
+
+@media screen and (min-width: 500px) {
+  .box__button {
+    display: grid;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+

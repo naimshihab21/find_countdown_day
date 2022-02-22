@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Countdown Search Your Input</title>
+</head>
+<body>
+  <!-- ===== MAIN ===== -->
+  <main class="container">
+    <div class="main__boxInput">
+      <div class="main__titleInput">
+        <h2>Input User</h2>
+      </div>
+
+      <form class="main__input">
+        <div class="input__date">
+          <span>Date</span>
+          <input type="number" class="date input__user" required>
+          <label>dd</label>
+        </div>
+        <div class="input__month">
+          <span>Month</span>
+          <!-- <input type="text" class="month input__user" required> -->
+          <select class="month input__user hover__option">
+            <option value=""></option>
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Okt">Okt</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+          <label>mm</label>
+        </div>
+        <div class="input__year">
+          <span>Year</span>
+          <input type="number" class="year input__user" required>
+          <label>yyyy</label>
+        </div>
+      </form>
+      <div class="box__button">
+        <button class="btn">Start</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== PREVIEW COUNTDOWN ===== -->
+  <section class="count__preview">
+    <div class="count__title">
+      <h1>Preview</h1>
+    </div>
+
+    <div class="count__timer">
+      <div class="count__days">
+        <h2 class="count__days-h2">0</h2>
+        <span>Days</span>
+      </div>
+      <div class="count__hours">
+        <h2 class="count__hours-h2">0</h2>
+        <span>Hours</span>
+      </div>
+      <div class="count__minutes">
+        <h2 class="count__minutes-h2">0</h2>
+        <span>Minutes</span>
+      </div>
+      <div class="count__seconds">
+        <h2 class="count__seconds-h2">0</h2>
+        <span>Seconds</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="box__notification">
+    <p><strong>Note :</strong> Jika ingin menghapus value dari form input, silahkan refresh halaman ini.</p>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
